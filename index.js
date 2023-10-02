@@ -31,13 +31,13 @@ let favouritesForCountry = (countrySkuCode) => {
 }
 
 const control = "MU6R3VC/A";
-let storeNumber = "R209";
+let storeNumber = "R301";
 let state = "AB";
 let country = "CA"
 
 if (args.length > 0) {
   const passedStore = args[0];
-  country = (args[1] ? args[1] : "US").toUpperCase();
+  country = (args[1] ? args[1] : "CA").toUpperCase();
   if (passedStore.charAt(0) === "R") {
     // All retail store numbers start with R
     storeNumber = passedStore;
